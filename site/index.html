@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>翁祺鈞 Chi-Jiun Wong</title>
+    <meta name="description" content="翁祺鈞的個人網站：中央大學資工系，做可驗證的機器學習原型，也做跑在免費額度上的小工具。" />
+    <meta property="og:title" content="翁祺鈞 Chi-Jiun Wong" />
+    <meta property="og:description" content="可驗證的機器學習原型，與跑在免費額度上的小工具。" />
+    <meta property="og:url" content="https://chijiun.github.io/" />
+    <meta name="theme-color" content="#0b0f14" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0f14'/%3E%3Cpath d='M9 8H6v16h3M23 8h3v16h-3' stroke='%23f2b33d' stroke-width='2.5' fill='none'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到主要內容</a>
+
+    <nav class="nav" aria-label="主選單">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">chijiun<span>.</span></a>
+        <div class="nav-links">
+          <a href="#research">研究</a>
+          <a href="#work">作品</a>
+          <a href="#projects">專案</a>
+          <a href="#about">關於</a>
+          <a href="#contact">聯絡</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">NCU CSIE · minor in Finance</p>
+        <h1>翁祺鈞 <span class="latin">Chi-Jiun <em>Wong</em></span></h1>
+        <blockquote class="motto">
+          <span>這個世界就是一個巨大的草台班子，</span>
+          <span class="hl">所以弄假直到成真。</span>
+        </blockquote>
+        <p class="lead">
+          中央大學資訊工程學系，輔系財務金融。國科會大專生研究計畫做的是<u>聯邦學習的可驗證差分隱私</u>；研究之外，我做<u>跑在免費額度上的小工具</u>：交易回測、放貸機器人、監測服務。
+        </p>
+        <p class="lead muted">這個網站上的每個數字都來自連結的 repo，旁邊寫著它的限制；團隊專案只寫我負責的部分。</p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/ChiJiun" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="btn" href="#work">看作品</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="research" aria-labelledby="research-h">
+        <div class="wrap">
+          <h2 id="research-h"><span class="num">01</span>研究</h2>
+          <article class="feature">
+            <div class="feature-head">
+              <h3>
+                <a href="https://github.com/ChiJiun/zk-verifiable-dp-fl" target="_blank" rel="noreferrer">zk-verifiable-dp-fl ↗</a>
+              </h3>
+              <p class="meta">國科會大專生研究計畫 · 國立中央大學</p>
+            </div>
+            <p>
+              聯邦學習的可驗證差分隱私：用零知識證明（Halo2 / EZKL）證明每個 client 的模型更新都有正確地裁剪（clip）並加上雜訊。
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong>150/150</strong>
+                <span>合成資料上，逐次更新的 Halo2 證明全數通過驗證</span>
+              </div>
+              <div class="stat limit">
+                <strong>300/300</strong>
+                <span>限制：界內攻擊同樣通過驗證。證明只保證更新不越界，不保證它是善意的</span>
+              </div>
+            </div>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Rust</li>
+              <li>Halo2</li>
+              <li>EZKL</li>
+              <li>Federated Learning</li>
+              <li>Differential Privacy</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-h">
+        <div class="wrap">
+          <h2 id="work-h"><span class="num">02</span>精選作品</h2>
+          <div class="cards">
+            <article class="card">
+              <h3><a href="https://github.com/ChiJiun/bitfinex-lending-bot" target="_blank" rel="noreferrer">bitfinex-lending-bot ↗</a></h3>
+              <p>Bitfinex 放貸機器人，依實際成交分層掛單。</p>
+              <p class="note">限制：250 小時內從未觸及 FRR。</p>
+              <ul class="tags"><li>Python</li></ul>
+            </article>
+            <article class="card">
+              <h3><a href="https://github.com/ChiJiun/mvdis-watch" target="_blank" rel="noreferrer">mvdis-watch ↗</a></h3>
+              <p>監理站考照報名餘額監測：36 個監理站 × 10 種照類，共 360 組場次。</p>
+              <p class="note">全部跑在一個 Cloudflare Worker 的免費額度上。</p>
+              <ul class="tags"><li>TypeScript</li><li>Cloudflare Workers</li></ul>
+            </article>
+            <article class="card">
+              <h3><a href="https://github.com/ChiJiun/StatsDiscordBot" target="_blank" rel="noreferrer">StatsDiscordBot ↗</a></h3>
+              <p>統計作業回饋 Discord 機器人，約 150 位學生使用。</p>
+              <p class="note">我負責 bot 核心：登入、HTML 解析、LLM 呼叫、儲存與 Drive 同步。</p>
+              <ul class="tags"><li>Python</li><li>Discord</li><li>LLM</li></ul>
+            </article>
+            <article class="card">
+              <h3><a href="https://github.com/ChiJiun/aws-hoyabit" target="_blank" rel="noreferrer">aws-hoyabit ↗</a></h3>
+              <p>加密貨幣市場分析 agent。</p>
+              <p class="note">我負責 agent loop、平行預取、問題路由、15 個資料工具與報告 schema。</p>
+              <ul class="tags"><li>Python</li><li>LLM agent</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-h">
+        <div class="wrap">
+          <h2 id="projects-h"><span class="num">03</span>其他專案</h2>
+          <div class="rows">
+            <div class="row">
+              <a class="row-name" href="https://github.com/ChiJiun/NCU_AI_Guidance" target="_blank" rel="noreferrer">NCU_AI_Guidance</a>
+              <p class="row-what">中央大學選課諮詢平台（團隊專案）</p>
+              <p class="row-part">前端部署到 Firebase、API 部署到 Render、Google 登入、登入使用者的對話紀錄存 PostgreSQL</p>
+            </div>
+            <div class="row">
+              <a class="row-name" href="https://github.com/ChiJiun/forecasting-fx-transformer" target="_blank" rel="noreferrer">forecasting-fx-transformer</a>
+              <p class="row-what">Fork 學長的匯率預測專案</p>
+              <p class="row-part">加入無資料洩漏的 rolling-origin 回測，重新檢驗原本的結果</p>
+            </div>
+            <div class="row">
+              <a class="row-name" href="https://github.com/ChiJiun/usdt-invoice-pulse" target="_blank" rel="noreferrer">usdt-invoice-pulse</a>
+              <p class="row-what">USDT/TWD 手續費目標與電子發票每日儀表板</p>
+              <p class="row-part">全部；實際下單預設關閉</p>
+            </div>
+            <div class="row">
+              <a class="row-name" href="https://github.com/ChiJiun/worldquant" target="_blank" rel="noreferrer">worldquant</a>
+              <p class="row-what">WorldQuant BRAIN API 模擬器與 alpha 研究迴圈</p>
+              <p class="row-part">全部；一次只改一個變因</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-h">
+        <div class="wrap">
+          <h2 id="about-h"><span class="num">04</span>關於</h2>
+          <div class="about">
+            <div class="block">
+              <h3>學歷</h3>
+              <div class="entry">
+                <p class="entry-title">國立中央大學</p>
+                <p class="meta">資訊工程學系 · 輔系 財務金融</p>
+              </div>
+            </div>
+            <div class="block">
+              <h3>常用技術</h3>
+              <dl class="skills">
+                <dt>語言</dt>
+                <dd><ul class="tags"><li>Python</li><li>TypeScript</li><li>Java</li><li>Rust</li></ul></dd>
+                <dt>密碼學 / ML</dt>
+                <dd><ul class="tags"><li>Halo2</li><li>EZKL</li><li>Federated Learning</li><li>LLM agents</li></ul></dd>
+                <dt>平台</dt>
+                <dd><ul class="tags"><li>Cloudflare Workers</li><li>Firebase</li><li>Render</li><li>PostgreSQL</li><li>GitHub Actions</li></ul></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="wrap footer-inner">
+        <div>
+          <p class="eyebrow">05 · contact</p>
+          <h2 class="footer-title">找到我</h2>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/ChiJiun" target="_blank" rel="noreferrer">github.com/ChiJiun ↗</a>
+          <a href="https://linktr.ee/0311gino" target="_blank" rel="noreferrer">linktr.ee/0311gino ↗</a>
+        </div>
+      </div>
+      <p class="wrap copy">© 2026 Chi-Jiun Wong</p>
+    </footer>
+  </body>
+</html>
