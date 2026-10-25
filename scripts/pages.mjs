@@ -2,10 +2,10 @@
 // - With showSlideBrowser off, open-slide renders "not found" at the base root,
 //   so the root redirects to the home deck before the app boots.
 // - GitHub Pages has no SPA rewrites; 404.html is a copy of index.html so deep
-//   links like /chijiun.io/s/home/ still load the app.
+//   links like /s/home still load the app.
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const BASE = '/chijiun.io/';
+const BASE = '/';
 const HOME = `${BASE}s/home`;
 
 const redirect = `<script>(function(){var p=location.pathname;if(p===${JSON.stringify(BASE)}||p===${JSON.stringify(BASE.slice(0, -1))}||p===${JSON.stringify(`${BASE}index.html`)}){history.replaceState(null,'',${JSON.stringify(HOME)}+location.search+location.hash);}})();</script>`;

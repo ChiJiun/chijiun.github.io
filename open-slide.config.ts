@@ -1,9 +1,9 @@
 import type { OpenSlideConfig } from '@open-slide/core';
 
-// Deployed as a GitHub Pages project site: https://chijiun.github.io/chijiun.io/
+// Deployed as the GitHub Pages user site: https://chijiun.github.io/
 // The site is a single deck (slides/home), shown in the read-only player.
 const openSlideConfig: OpenSlideConfig = {
-  base: '/chijiun.io/',
+  base: '/',
   build: {
     showSlideBrowser: false,
     showSlideUi: false,

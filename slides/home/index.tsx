@@ -125,7 +125,7 @@ const Cover: Page = () => (
   <div style={{ ...fill, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: `0 ${PAD + 40}px` }}>
     <Backdrop />
     <div style={{ position: 'relative' }}>
-      <Eyebrow>chijiun.io · personal site</Eyebrow>
+      <Eyebrow>chijiun.github.io · personal site</Eyebrow>
       <h1 style={{ fontSize: 'var(--osd-size-hero)', fontWeight: 800, margin: '28px 0 0', lineHeight: 1.05, letterSpacing: '0.04em' }}>翁祺鈞</h1>
       <div style={{ fontFamily: 'var(--osd-font-display)', fontSize: 56, fontWeight: 700, color: muted, marginTop: 12 }}>Chi-Jiun Wong</div>
       <div style={{ display: 'flex', gap: 18, alignItems: 'center', marginTop: 48 }}>
